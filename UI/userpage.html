@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Auto-Mart | Welcome</title>
+    <title>Auto-Mart | Dash-Board</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -20,99 +20,43 @@
                     </div>
                     
                     <ul>
-                        <li><a href="#">Post Ads</a></li>
-                        <li><a href="#">My Ads</a></li>
-                        <li><a href="index.html"><button id="reg" class="reg">Logout</button></a></li>
+                        <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Admin</a></li>
+                        <li><button id="logout"><i class="fas fa-sign-in-alt"></i> Logout</button></li>
                     </ul>
                 </nav>
             </header>
         </div>
-    
-    <!-- POSTED CARS SECTION -->
-        <div class="container post-bg">
-            <section>
-                <div class="instruction">
-                    <h3>Auto Mart</h3>
-                    <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada maximus ligula, sit amet pulvinar tortor rutrum eget. Sed tempor, leo at tempus lobortis, metus neque placerat nunc, eu sodales nibh nisl nec ante. Donec faucibus tristique accumsan. Mauris feugiat risus eu laoreet suscipit. Donec volutpat ac metus mollis porttitor. Vestibulum vel nulla vel velit tincidunt mattis. Pellentesque vestibulum, risus at semper pulvinar, magna libero euismod massa</p>
-                </div>
-                <div class="post">
-                    <div>
-                        <a href="#"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
-                        <a href="#"><div class="product-name">Mercedes-Benz</div></a>
-                        <div class="prodct-price">$1350.00</div>
-                    </div>
+    <!-- OPTION SECTION -->
 
-                    <div>
-                        <a href="#"><img src="images/car2.jpg" alt="picture" width="200px" height="200px"></a>
-                        <a href="#"><div class="product-name">Mercedes-Benz</div></a>
-                        <div class="prodct-price">$1350.00</div>
-                    </div>
-
-                    <div>
-                        <a href="#"><img src="images/car3.jpg" alt="picture" width="200px" height="200px"></a>
-                        <a href="#"><div class="product-name">Mercedes-Benz</div></a>
-                        <div class="prodct-price">$1350.00</div>
-                    </div>
-
-                    <div>
-                        <a href="#"><img src="images/car4.jpg" alt="picture" width="200px" height="200px"></a>
-                        <a href="#"><div class="product-name">Mercedes-Benz</div></a>
-                        <div class="prodct-price">$1350.00</div>
-                    </div>
-
-                    <div>
-                        <a href="#"><img src="images/car5.jpg" alt="picture" width="200px" height="200px"></a>
-                        <a href="#"><div class="product-name">Mercedes-Benz</div></a>
-                        <div class="prodct-price">$1350.00</div>
-                    </div>
-
-                    <div>
-                        <a href="#"><img src="images/car6.jpg" alt="picture" width="200px" height="200px"></a>
-                        <a href="#"><div class="product-name">Mercedes-Benz</div></a>
-                        <div class="prodct-price">$1350.00</div>
-                    </div>
-
-                    <div>
-                        <a href="#"><img src="images/car7.jpg" alt="picture" width="200px" height="200px"></a>
-                        <a href="#"><div class="product-name">Mercedes-Benz</div></a>
-                        <div class="prodct-price">$1350.00</div>
-                    </div>
-
-                    <div>
-                        <a href="#"><img src="images/car8.jpg" alt="picture" width="200px" height="200px"></a>
-                        <a href="#"><div class="product-name">Mercedes-Benz</div></a>
-                        <div class="prodct-price">$1350.00</div>
-                    </div>
-                </div>
-                <div class="view-all">
-                    <a href="#">view all</a>
-                </div>
-            </section>
+    <div class="container">   
+        <div class="menuTab">
+                <button id="post">My Ads</button>
+                <button id="reg" class="reg">Make Order</button>
+                <button id="reg" class="reg">Post Ad</button>
+                <button id="reg" class="reg">profile</button>
         </div>
+    </div>
 
-    <!-- BLOG AND TESTIMONIAL SECTION -->
-        <div class="container">
-            <section>
-                <div class="instruction blog">
-                    <h3>From our blog</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada maximus ligula, sit amet pulvinar tortor rutrum eget. Sed tempor, leo at tempus lobortis</p>
-                </div>
+    <!-- POST A CAR SECTION -->
+    <div class="container">
+        <div class="content">
+            <div>
+                <form class="postCar">
+                    <h3>POST A CAR</h3>
+                    <input type="file"> <br>
+                    <input type="text" name="make" placeholder="Make of car"><br>
+                    <input type="number" name="price" placeholder="$2,500.00"><br>
+                    <input type="date"><br>
 
-                <div class="blog-posts">
-                    <div class="blog-post">
-                        <a href="#"><img src="./images/blog1.jpg" alt="blog post" width="150px" height="150px;"></a>
-                        <a href="#"><h2 class="blog-title">Blog post title</h2></a>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada maximus ligula, sit amet pulvinar tortor rutrum eget.</div>
-                    </div>
-
-                    <div class="blog-post">
-                        <a href="#"><img src="./images/blog1.jpg" alt="blog post" width="150px" height="150px;"></a>
-                        <a href="#"><h2 class="blog-title">Blog post title</h2></a>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada maximus ligula, sit amet pulvinar tortor rutrum eget.</div>
-                    </div>
-                </div>
-            </section>
+                    <input type="button" value="Post">
+                </form>
+            </div>
         </div>
+    </div>
+
 
     <!-- FOOTER SECTION -->
         <div class="container">
