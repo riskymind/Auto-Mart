@@ -22,7 +22,7 @@
                     <ul>
                         <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
                         <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">My Ads</a></li>
                         <li><a href="#">Admin</a></li>
                         <li><button id="logout"><i class="fas fa-sign-in-alt"></i> Logout</button></li>
                     </ul>
@@ -32,31 +32,51 @@
     <!-- OPTION SECTION -->
 
     <div class="container">   
-        <div class="menuTab">
-                <button id="post">My Ads</button>
-                <button id="reg" class="reg">Make Order</button>
-                <button id="reg" class="reg">Post Ad</button>
-                <button id="reg" class="reg">profile</button>
+        <div class="menu">
+            <button  id="postAd">Post Ad</button>
+            <button  id="orderButton">Make Order</button>  
         </div>
     </div>
 
     <!-- POST A CAR SECTION -->
     <div class="container">
-        <div class="content">
+        <div class="content" id="postAd">
             <div>
                 <form class="postCar">
                     <h3>POST A CAR</h3>
                     <input type="file"> <br>
-                    <input type="text" name="make" placeholder="Make of car"><br>
-                    <input type="number" name="price" placeholder="$2,500.00"><br>
-                    <input type="date"><br>
-
+                    <input type="text" name="make" placeholder="Make"><br>
+                    <input type="number" name="price" placeholder="Price"><br>
+                    <input type="text" name="price" placeholder="Condition"><br>
                     <input type="button" value="Post">
                 </form>
             </div>
         </div>
     </div>
 
+    <!-- MAKE AN ORDER -->
+        <div id="orderModal" class="modal">
+            <div class="modal-content">
+                <div class="sign-up" id="formContainer">
+                     <form class="form-container">
+                        <h1>Make Order</h1>
+
+                        <label for="make"><b>Make</b></label>
+                        <input type="text" placeholder="Enter car make" name="make">
+
+                        <label for="price"><b>price</b></label>
+                        <input type="number" placeholder="Enter price" name="price" required>
+
+                        <label for="condition"><b>condition</b></label>
+                        <input type="text" placeholder="Enter condition" name="condition" required>
+
+                        <button type="submit" class="btn">order</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
 
     <!-- FOOTER SECTION -->
         <div class="container">
@@ -73,7 +93,23 @@
                 </div>	
             </footer>
         </div>
+<script>
+    // Open the order Modal 
+    const openOrderModal = ()=> {
+        orderModal.style.display = 'block';
+        formContainer.style.backgroundColor = "#203140";
+        
+    }
 
-<script src="script/script.js"></script>
+    // method to close the modal by clicking outside the modal
+    const outsideModal = (e)=> {
+    if(e.target === orderModal) {
+        orderModal.style.display = 'none';
+    }
+}
+
+    orderButton.addEventListener('click', openOrderModal);
+    window.addEventListener('click', outsideModal);
+</script>
 </body>
 </html>

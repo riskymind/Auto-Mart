@@ -135,10 +135,12 @@ nav a:hover {
     padding: 10px 0 2px 1px;
 }
 
-.prodct-price {
+.product-price {
     margin-bottom: 10px;
     color: white;
+    background: green;
 }
+
 
 .view-all {
     text-align: center;
@@ -199,7 +201,7 @@ nav a:hover {
 }
 
 /* POST A CAR OPTIONS */
-.menuTab {
+.menu {
     margin: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -207,9 +209,8 @@ nav a:hover {
     grid-gap: 5px;
 }
 
-.content {
-    height: 100%;
-    padding: 20px;
+.menu button:active{
+    color:red;
 }
 .postCar {
     text-align: center;
@@ -354,3 +355,4 @@ nav a:hover {
         width: 100%;
     }
 }
+

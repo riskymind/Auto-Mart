@@ -5,6 +5,8 @@ const regModal =  document.getElementById('regModal');
 const regButton = document.getElementById('reg');
 const loginModal =  document.getElementById('loginModal');
 const loginButton = document.getElementById('login');
+const orderModal = document.getElementById('orderModal');
+const orderButton = document.getElementById('orderButton');
 
 
 // Open the registration modal
@@ -17,6 +19,8 @@ const OpenLoginModal = ()=> {
     loginModal.style.display = 'block';
 }
 
+
+
 // method to close the modal by clicking outside the modal
 const outsideModal = (e)=> {
     if(e.target === regModal) {
@@ -26,11 +30,16 @@ const outsideModal = (e)=> {
     if(e.target === loginModal) {
         loginModal.style.display = 'none';
     }
+
+    if(e.target === orderModal) {
+        orderModal.style.display = 'none';
+    }
 }
 
 // Listening for reg click events
 regButton.addEventListener('click', openRegModal);
 window.addEventListener('click', outsideModal);
 loginButton.addEventListener('click', OpenLoginModal);
+
 
 
