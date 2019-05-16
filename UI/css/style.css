@@ -381,7 +381,15 @@ nav a:hover {
 
 /* view Car */
 .viewCar {
-    margin: 50px;
-    display: flex;
-    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px;
+    grid-gap: 15px;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
 }
