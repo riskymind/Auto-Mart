@@ -21,7 +21,7 @@
                     
                     <ul>
                         <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="order.html">My Order</a></li>
                         <li><a href="advert.html">My Ads</a></li>
                         <li><a href="#">Admin</a></li>
                         <li><button id="logout"><i class="fas fa-sign-in-alt"></i> Logout</button></li>
@@ -62,7 +62,7 @@
                         <h1>Make Order</h1>
 
                         <label for="make"><b>Make</b></label>
-                        <input type="text" placeholder="Enter car make" name="make">
+                        <input type="text" placeholder="Enter car make" name="make" required>
 
                         <label for="price"><b>price</b></label>
                         <input type="number" placeholder="Enter price" name="price" required>
@@ -70,8 +70,8 @@
                         <label for="condition"><b>condition</b></label>
                         <input type="text" placeholder="Enter condition" name="condition" required>
 
-                        <button type="submit" class="btn">order</button>
-                        <button type="button" class="btn cancel" onclick="closeForm()">cancel</button>
+                        <button type="submit">order</button>
+                        <button type="button">cancel</button>
                     </form>
                 </div>
             </div>
