@@ -14,8 +14,8 @@
 .modal-content {
     margin: 1% auto;
     padding: 10px;
-    width: 30%;
-    height: 70%;
+    width: 70%;
+    height: 50%;
     animation-name: modalopen;
 	animation-duration: 1s;
 }
@@ -33,8 +33,8 @@
 	to { opacity: 1 }
 }
 
-/* Registration form */
-.sign-up, .sign-in {
+/*  forms */
+.sign-up, .sign-in, .make-order, .post-ad {
     background: rgba(44, 62, 80, 0.7);
     padding: 40px;
     width: 400px;
@@ -47,6 +47,15 @@ form {
     margin: 60px auto;
     width: 250px;
 }
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -15px;
+  justify-content: center;
+}
+
 
 h2 {
     padding: 0px 0px 40px 4px;
@@ -88,7 +97,7 @@ input[type="button"]:hover {
     .modal-content {
         width: 70%;
     }
-    .sign-up, .sign-in {
+    .sign-up, .sign-in, .make-order, .post-ad {
         margin: auto;
     }
 }
@@ -98,7 +107,7 @@ input[type="button"]:hover {
         width: 100%;
     }
 
-    .sign-up, .sign-in{
+    .sign-up, .sign-in, .make-order, .post-ad {
         width: 100%;
         
     }

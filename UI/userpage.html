@@ -22,7 +22,7 @@
                     <ul>
                         <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
                         <li><a href="order.html">My Order</a></li>
-                        <li><a href="advert.html">My Ads</a></li>
+                        <li><a href="userpage.html">My Ads</a></li>
                         <li><a href="admin.html">Admin</a></li>
                         <li><button id="logout"><i class="fas fa-sign-in-alt"></i> Logout</button></li>
                     </ul>
@@ -33,16 +33,16 @@
 
     <div class="container">   
         <div class="menu">
-            <button  id="postAd">Post Ad</button>
+            <button  id="postButton">Post Ad</button>
             <button  id="orderButton">Make Order</button>  
         </div>
     </div>
 
     <!-- POST A CAR SECTION -->
-    <div class="container">
-        <div class="content" id="postAd">
-            <div>
-                <form class="postCar">
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <div class="post-ad" id="postAd">
+                <form class="form-container">
                     <h3>POST A CAR</h3>
                     <input type="file"> <br>
                     <input type="text" name="make" placeholder="Make"><br>
@@ -54,10 +54,12 @@
         </div>
     </div>
 
+        
+
     <!-- MAKE AN ORDER -->
         <div id="orderModal" class="modal">
             <div class="modal-content">
-                <div class="sign-up" id="formContainer">
+                <div class="make-order" id="formContainer">
                      <form class="form-container">
                         <h1>Make Order</h1>
 
@@ -76,6 +78,138 @@
                 </div>
             </div>
         </div>
+
+
+
+        <!-- OPTION SECTION -->
+
+    <div class="container">   
+        <div>
+            <h3>click on image to view details</h3>
+            <ul class="adMenu">
+               <li><button>ALL Ads</button></li> <br>
+               <li><button>Sold Ads</button></li> <br>
+               <li><button>Unsold Ads</button></li> 
+            </ul>
+            <hr>    
+        </div>
+    </div>
+    
+
+    <!-- ALL ADVERT -->
+    <div class="container post">
+        <div class="post">
+            <div class="advert">
+                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                <a href="#"><div class="product-name">Mercedes-Benz</div></a>
+                <div class="prodct-price">$1350.00</div>
+                <div class="panel">
+                    <button><i class="fas fa-edit"></i></button>
+                    <button><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="advert">
+                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                <a href="#"><div class="product-name">Mercedes-Benz</div></a>
+                <div class="prodct-price">$1350.00</div>
+                <div class="panel">
+                    <button><i class="fas fa-edit"></i></button>
+                    <button><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="advert">
+                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                <a href="#"><div class="product-name">Mercedes-Benz</div></a>
+                <div class="prodct-price">$1350.00</div>
+                <div class="panel">
+                    <button><i class="fas fa-edit"></i></button>
+                    <button><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        </div>
+
+         <div class="post">
+            <div class="advert">
+                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                <a href="#"><div class="product-name">Mercedes-Benz</div></a>
+                <div class="prodct-price">$1350.00</div>
+                <div class="panel">
+                    <button><i class="fas fa-edit"></i></button>
+                    <button><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        </div>
+
+         <div class="post">
+            <div class="advert">
+                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                <a href="#"><div class="product-name">Acura</div></a>
+                <div class="prodct-price">$1350.00</div>
+                <div class="panel">
+                    <button><i class="fas fa-edit"></i></button>
+                    <button><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        </div>
+
+         <div class="post">
+            <div class="advert">
+                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                <a href="#"><div class="product-name">Mercedes-Benz</div></a>
+                <div class="prodct-price">$1350.00</div>
+                <div class="panel">
+                    <button><i class="fas fa-edit"></i></button>
+                    <button><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        </div>
+
+         <div class="post">
+            <div class="advert">
+                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                <a href="#"><div class="product-name">Mercedes-Benz</div></a>
+                <div class="prodct-price">$1350.00</div>
+                <div class="panel">
+                    <button><i class="fas fa-edit"></i></button>
+                    <button><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        </div>
+
+        
+         <div class="post">
+            <div class="advert">
+                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                <a href="#"><div class="product-name">Mercedes-Benz</div></a>
+                <div class="prodct-price">$1350.00</div>
+                <div class="panel">
+                    <button><i class="fas fa-edit"></i></button>
+                    <button><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        </div>
+
+        
+         <div class="post">
+            <div class="advert">
+                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                <a href="#"><div class="product-name">Mercedes-Benz</div></a>
+                <div class="prodct-price">$1350.00</div>
+                <div class="panel">
+                    <button><i class="fas fa-edit"></i></button>
+                    <button><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     
 
     <!-- FOOTER SECTION -->
@@ -97,8 +231,13 @@
     // Open the order Modal 
     const openOrderModal = ()=> {
         orderModal.style.display = 'block';
-        formContainer.style.backgroundColor = "#203140";
-        
+        formContainer.style.backgroundColor = "#203140";  
+    }
+
+    // Open the post Modal
+    const openPostModal = ()=> {
+        postModal.style.display = 'block';
+        postAd.style.backgroundColor = "#203140";
     }
 
     // method to close the modal by clicking outside the modal
@@ -106,10 +245,17 @@
     if(e.target === orderModal) {
         orderModal.style.display = 'none';
     }
+
+    if(e.target === postModal) {
+        postModal.style.display = 'none';
+    }
 }
 
     orderButton.addEventListener('click', openOrderModal);
+    postButton.addEventListener('click', openPostModal);
     window.addEventListener('click', outsideModal);
+
+
 </script>
 </body>
 </html>

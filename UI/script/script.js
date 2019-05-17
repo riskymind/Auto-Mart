@@ -19,6 +19,11 @@ const OpenLoginModal = ()=> {
     loginModal.style.display = 'block';
 }
 
+// Open the order Modal 
+const openOrderModal = ()=> {
+    orderModal.style.display = 'block';
+    formContainer.style.backgroundColor = "#203140";  
+}
 
 
 // method to close the modal by clicking outside the modal
@@ -40,6 +45,7 @@ const outsideModal = (e)=> {
 regButton.addEventListener('click', openRegModal);
 window.addEventListener('click', outsideModal);
 loginButton.addEventListener('click', OpenLoginModal);
+orderButton.addEventListener('click', openOrderModal);
 
 
 
