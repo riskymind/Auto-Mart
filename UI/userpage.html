@@ -24,19 +24,17 @@
                         <li><a href="order.html">My Order</a></li>
                         <li><a href="userpage.html">My Ads</a></li>
                         <li><a href="admin.html">Admin</a></li>
-                        <li><button id="logout"><i class="fas fa-sign-in-alt"></i> Logout</button></li>
+                        <div class="dropdown">
+                            <i class="fas fa-user-circle">profile</i>
+                            <div class="dropdown-content">
+                                <button id="postButton">Post Ad</button>
+                                <button id="logout"><i class="fas fa-sign-in-alt"></i> Logout</button>
+                            </div>
+                        </div>
                     </ul>
                 </nav>
             </header>
         </div>
-    <!-- OPTION SECTION -->
-
-    <div class="container">   
-        <div class="menu">
-            <button  id="postButton">Post Ad</button>
-            <button  id="orderButton">Make Order</button>  
-        </div>
-    </div>
 
     <!-- POST A CAR SECTION -->
     <div id="postModal" class="modal">
@@ -53,161 +51,164 @@
             </div>
         </div>
     </div>
-
-        
-
-    <!-- MAKE AN ORDER -->
-        <div id="orderModal" class="modal">
-            <div class="modal-content">
-                <div class="make-order" id="formContainer">
-                     <form class="form-container">
-                        <h1>Make Order</h1>
-
-                        <label for="make"><b>Make</b></label>
-                        <input type="text" placeholder="Enter car make" name="make" required>
-
-                        <label for="price"><b>price</b></label>
-                        <input type="number" placeholder="Enter price" name="price" required>
-
-                        <label for="condition"><b>condition</b></label>
-                        <input type="text" placeholder="Enter condition" name="condition" required>
-
-                        <button type="submit">order</button>
-                        <button type="button">cancel</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- OPTION SECTION -->
-
-    <div class="container">   
-        <div>
-            <h3>click on image to view details</h3>
-            <ul class="adMenu">
-               <li><button>ALL Ads</button></li> <br>
-               <li><button>Sold Ads</button></li> <br>
-               <li><button>Unsold Ads</button></li> 
-            </ul>
-            <hr>    
-        </div>
-    </div>
     
 
     <!-- ALL ADVERT -->
-    <div class="container post">
-        <div class="post">
-            <div class="advert">
-                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
-                <a href="#"><div class="product-name">Mercedes-Benz</div></a>
-                <div class="prodct-price">$1350.00</div>
-                <div class="panel">
-                    <button><i class="fas fa-edit"></i></button>
-                    <button><i class="fas fa-trash-alt"></i></button>
-                </div>
-            </div>
-        </div>
+        <div class="container post-bg">
+            <section>
+                <div class="post">
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div> 
+                    </div>
 
-        <div class="post">
-            <div class="advert">
-                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
-                <a href="#"><div class="product-name">Mercedes-Benz</div></a>
-                <div class="prodct-price">$1350.00</div>
-                <div class="panel">
-                    <button><i class="fas fa-edit"></i></button>
-                    <button><i class="fas fa-trash-alt"></i></button>
-                </div>
-            </div>
-        </div>
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div> 
+                    </div>
 
-        <div class="post">
-            <div class="advert">
-                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
-                <a href="#"><div class="product-name">Mercedes-Benz</div></a>
-                <div class="prodct-price">$1350.00</div>
-                <div class="panel">
-                    <button><i class="fas fa-edit"></i></button>
-                    <button><i class="fas fa-trash-alt"></i></button>
-                </div>
-            </div>
-        </div>
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div> 
+                    </div>
 
-         <div class="post">
-            <div class="advert">
-                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
-                <a href="#"><div class="product-name">Mercedes-Benz</div></a>
-                <div class="prodct-price">$1350.00</div>
-                <div class="panel">
-                    <button><i class="fas fa-edit"></i></button>
-                    <button><i class="fas fa-trash-alt"></i></button>
-                </div>
-            </div>
-        </div>
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div> 
+                    </div>
 
-         <div class="post">
-            <div class="advert">
-                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
-                <a href="#"><div class="product-name">Acura</div></a>
-                <div class="prodct-price">$1350.00</div>
-                <div class="panel">
-                    <button><i class="fas fa-edit"></i></button>
-                    <button><i class="fas fa-trash-alt"></i></button>
-                </div>
-            </div>
-        </div>
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div>
+                        
+                    </div>
 
-         <div class="post">
-            <div class="advert">
-                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
-                <a href="#"><div class="product-name">Mercedes-Benz</div></a>
-                <div class="prodct-price">$1350.00</div>
-                <div class="panel">
-                    <button><i class="fas fa-edit"></i></button>
-                    <button><i class="fas fa-trash-alt"></i></button>
-                </div>
-            </div>
-        </div>
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div>
+                        
+                    </div>
 
-         <div class="post">
-            <div class="advert">
-                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
-                <a href="#"><div class="product-name">Mercedes-Benz</div></a>
-                <div class="prodct-price">$1350.00</div>
-                <div class="panel">
-                    <button><i class="fas fa-edit"></i></button>
-                    <button><i class="fas fa-trash-alt"></i></button>
-                </div>
-            </div>
-        </div>
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div>
+                        
+                    </div>
 
-        
-         <div class="post">
-            <div class="advert">
-                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
-                <a href="#"><div class="product-name">Mercedes-Benz</div></a>
-                <div class="prodct-price">$1350.00</div>
-                <div class="panel">
-                    <button><i class="fas fa-edit"></i></button>
-                    <button><i class="fas fa-trash-alt"></i></button>
-                </div>
-            </div>
-        </div>
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div>
+                        
+                    </div>
 
-        
-         <div class="post">
-            <div class="advert">
-                <a href="image.html"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
-                <a href="#"><div class="product-name">Mercedes-Benz</div></a>
-                <div class="prodct-price">$1350.00</div>
-                <div class="panel">
-                    <button><i class="fas fa-edit"></i></button>
-                    <button><i class="fas fa-trash-alt"></i></button>
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div>
+                        
+                    </div> 
                 </div>
-            </div>
-        </div>
-    </div>
+            </section>
+         </div>
+
 
 
     
@@ -242,16 +243,12 @@
 
     // method to close the modal by clicking outside the modal
     const outsideModal = (e)=> {
-    if(e.target === orderModal) {
-        orderModal.style.display = 'none';
-    }
 
     if(e.target === postModal) {
         postModal.style.display = 'none';
     }
 }
 
-    orderButton.addEventListener('click', openOrderModal);
     postButton.addEventListener('click', openPostModal);
     window.addEventListener('click', outsideModal);
 

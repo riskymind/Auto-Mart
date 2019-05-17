@@ -229,6 +229,28 @@ nav a:hover {
 .menu button:active{
     color:red;
 }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:none;
+  min-width: 60px;
+  z-index: 1;
+}
+
+.dropdown-content button {
+  color: black;
+  padding: 4px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
 .postCar {
     text-align: center;
     width: 40%;
