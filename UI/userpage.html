@@ -36,12 +36,21 @@
             </header>
         </div>
     <!-- status SECTION -->
-        <div class="status">
-            <h4>filter out Sold or Unsold Ads</h4><br>
-            <label for="sold">Sold</label>
-            <input type="radio" name="status" id="sold">
-            <label for="unsold">Unsold</label>
-            <input type="radio" name="status" id="unsold">
+        <div class="container">
+            <div class="desc">
+                <select>
+                    <option disabled selected>--status--</option>
+                    <option>Unsold</option>
+                    <option>Fraudulent</option>
+                    <option>Sold</option>
+                </select>
+                <select>
+                    <option disabled selected>--condition--</option>
+                    <option>New</option>
+                    <option>Used</option>
+                </select>
+                <button>search</button>
+            </div>
         </div>
 
     <!-- POST A CAR SECTION -->
