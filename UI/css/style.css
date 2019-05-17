@@ -422,3 +422,15 @@ select {
     border-radius: 5px;
     outline: none;
 }
+
+/* status */
+
+.status {
+    text-align: center;
+    margin: 40px 0 10px 0;
+    color: white;
+}
+
+.status h4 {
+    text-decoration: underline;
+}
