@@ -22,27 +22,25 @@
                     <ul>
                         <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
                         <li><a href="order.html">My Order</a></li>
-                        <li><a href="advert.html">My Ads</a></li>
-                        <li><a href="#">Admin</a></li>
-                        <li><button id="logout"><i class="fas fa-sign-in-alt"></i> Logout</button></li>
+                        <li><a href="userpage.html">My Ads</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                        <div class="dropdown">
+                            <i class="fas fa-user-circle">profile</i>
+                            <div class="dropdown-content">
+                                <button id="postButton">Post Ad</button>
+                                <button id="logout"><i class="fas fa-sign-in-alt"></i> Logout</button>
+                            </div>
+                        </div>
                     </ul>
                 </nav>
             </header>
         </div>
-    <!-- OPTION SECTION -->
-
-    <div class="container">   
-        <div class="menu">
-            <button  id="postAd">Post Ad</button>
-            <button  id="orderButton">Make Order</button>  
-        </div>
-    </div>
 
     <!-- POST A CAR SECTION -->
-    <div class="container">
-        <div class="content" id="postAd">
-            <div>
-                <form class="postCar">
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <div class="post-ad" id="postAd">
+                <form class="form-container">
                     <h3>POST A CAR</h3>
                     <input type="file"> <br>
                     <input type="text" name="make" placeholder="Make"><br>
@@ -53,29 +51,166 @@
             </div>
         </div>
     </div>
+    
 
-    <!-- MAKE AN ORDER -->
-        <div id="orderModal" class="modal">
-            <div class="modal-content">
-                <div class="sign-up" id="formContainer">
-                     <form class="form-container">
-                        <h1>Make Order</h1>
+    <!-- ALL ADVERT -->
+        <div class="container post-bg">
+            <section>
+                <div class="post">
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div> 
+                    </div>
 
-                        <label for="make"><b>Make</b></label>
-                        <input type="text" placeholder="Enter car make" name="make" required>
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div> 
+                    </div>
 
-                        <label for="price"><b>price</b></label>
-                        <input type="number" placeholder="Enter price" name="price" required>
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div> 
+                    </div>
 
-                        <label for="condition"><b>condition</b></label>
-                        <input type="text" placeholder="Enter condition" name="condition" required>
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div> 
+                    </div>
 
-                        <button type="submit">order</button>
-                        <button type="button">cancel</button>
-                    </form>
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+
+                    <div class="frame">
+                        <a href="image.html" class="image"><img src="images/car1.jpg" alt="picture" width="200px" height="200px"></a>
+                        <div class="product">
+                            <div>
+                                <a href="#">Mercedes-Benz</a>
+                                <div class="product-price">$1350.00</div>
+                            </div>
+                            <button id="orderButton">Edit</button><br>
+                            <select>
+                                <option>Sold</option>
+                                <option>Fraudulent</option>
+                                <option>Order</option>
+                            </select>
+                        </div>
+                        
+                    </div> 
                 </div>
-            </div>
-        </div>
+            </section>
+         </div>
+
+
+
     
 
     <!-- FOOTER SECTION -->
@@ -97,19 +232,27 @@
     // Open the order Modal 
     const openOrderModal = ()=> {
         orderModal.style.display = 'block';
-        formContainer.style.backgroundColor = "#203140";
-        
+        formContainer.style.backgroundColor = "#203140";  
+    }
+
+    // Open the post Modal
+    const openPostModal = ()=> {
+        postModal.style.display = 'block';
+        postAd.style.backgroundColor = "#203140";
     }
 
     // method to close the modal by clicking outside the modal
     const outsideModal = (e)=> {
-    if(e.target === orderModal) {
-        orderModal.style.display = 'none';
+
+    if(e.target === postModal) {
+        postModal.style.display = 'none';
     }
 }
 
-    orderButton.addEventListener('click', openOrderModal);
+    postButton.addEventListener('click', openPostModal);
     window.addEventListener('click', outsideModal);
+
+
 </script>
 </body>
 </html>

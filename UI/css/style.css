@@ -13,6 +13,11 @@ body {
     background: #203140;
 }
 
+a {
+    color: #fff;
+    margin: auto;
+}
+
 button {
     padding: 0.25rem 0.5rem;
     background: #496D8C;
@@ -32,6 +37,11 @@ button:hover {
     margin: auto;
 }
 
+.container h3 {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
 /* header and nav styles */
 
 nav {
@@ -129,17 +139,25 @@ nav a:hover {
     grid-gap: 3px;
 }
 
-.product-name {
-    color: #D9AC9C;
-    padding: 10px 0 2px 1px;
+.product {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.product-price {
-    margin-bottom: 10px;
-    color: white;
-    background: green;
+.product div {
+    margin: 10px;
 }
 
+.frame {
+    display: flex;
+    border: 1px dotted#D9AC9C;
+}
+
+.image {
+    margin: auto;
+}
 
 .view-all {
     text-align: center;
@@ -211,6 +229,28 @@ nav a:hover {
 .menu button:active{
     color:red;
 }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:none;
+  min-width: 60px;
+  z-index: 1;
+}
+
+.dropdown-content button {
+  color: black;
+  padding: 4px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
 .postCar {
     text-align: center;
     width: 40%;
