@@ -218,18 +218,6 @@ nav a:hover {
 }
 
 /* POST A CAR OPTIONS */
-.menu {
-    margin: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 50px;
-    grid-gap: 5px;
-}
-
-.menu button:active{
-    color:red;
-}
-
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
